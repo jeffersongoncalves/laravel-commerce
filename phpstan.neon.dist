@@ -15,5 +15,11 @@ parameters:
         - packages/user/src
         - packages/auth/src
         - packages/product/src
+        - packages/pricing/src
+        - packages/inventory/src
     level: 5
     ignoreErrors: []
+    parallel:
+        # Larastan boots the Testbench app per worker; concurrent workers race
+        # on bootstrap/cache/services.php on Windows. One process avoids it.
+        maximumNumberOfProcesses: 1

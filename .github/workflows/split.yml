@@ -25,6 +25,8 @@ jobs:
           - { local: user,           split: laravel-commerce-user }
           - { local: auth,           split: laravel-commerce-auth }
           - { local: product,        split: laravel-commerce-product }
+          - { local: pricing,        split: laravel-commerce-pricing }
+          - { local: inventory,      split: laravel-commerce-inventory }
 
     name: Split ${{ matrix.package.split }}
     steps:
