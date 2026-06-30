@@ -42,7 +42,10 @@
             "JeffersonGoncalves\\Commerce\\Store\\Database\\Factories\\": "packages/store/database/factories",
             "JeffersonGoncalves\\Commerce\\SalesChannel\\": "packages/sales-channel/src",
             "JeffersonGoncalves\\Commerce\\SalesChannel\\Tests\\": "packages/sales-channel/tests",
-            "JeffersonGoncalves\\Commerce\\SalesChannel\\Database\\Factories\\": "packages/sales-channel/database/factories"
+            "JeffersonGoncalves\\Commerce\\SalesChannel\\Database\\Factories\\": "packages/sales-channel/database/factories",
+            "JeffersonGoncalves\\Commerce\\Region\\": "packages/region/src",
+            "JeffersonGoncalves\\Commerce\\Region\\Tests\\": "packages/region/tests",
+            "JeffersonGoncalves\\Commerce\\Region\\Database\\Factories\\": "packages/region/database/factories"
         }
     },
     "scripts": {

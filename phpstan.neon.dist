@@ -9,5 +9,6 @@ parameters:
         - packages/currency/src
         - packages/store/src
         - packages/sales-channel/src
+        - packages/region/src
     level: 5
     ignoreErrors: []
