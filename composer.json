@@ -36,7 +36,13 @@
             "JeffersonGoncalves\\Commerce\\Core\\Database\\Factories\\": "packages/core/database/factories",
             "JeffersonGoncalves\\Commerce\\Currency\\": "packages/currency/src",
             "JeffersonGoncalves\\Commerce\\Currency\\Tests\\": "packages/currency/tests",
-            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Factories\\": "packages/currency/database/factories"
+            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Factories\\": "packages/currency/database/factories",
+            "JeffersonGoncalves\\Commerce\\Store\\": "packages/store/src",
+            "JeffersonGoncalves\\Commerce\\Store\\Tests\\": "packages/store/tests",
+            "JeffersonGoncalves\\Commerce\\Store\\Database\\Factories\\": "packages/store/database/factories",
+            "JeffersonGoncalves\\Commerce\\SalesChannel\\": "packages/sales-channel/src",
+            "JeffersonGoncalves\\Commerce\\SalesChannel\\Tests\\": "packages/sales-channel/tests",
+            "JeffersonGoncalves\\Commerce\\SalesChannel\\Database\\Factories\\": "packages/sales-channel/database/factories"
         }
     },
     "scripts": {

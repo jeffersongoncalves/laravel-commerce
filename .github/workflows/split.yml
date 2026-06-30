@@ -16,7 +16,9 @@ jobs:
         package:
           - { local: suite,    split: laravel-commerce-suite }
           - { local: core,     split: laravel-commerce-core }
-          - { local: currency, split: laravel-commerce-currency }
+          - { local: currency,      split: laravel-commerce-currency }
+          - { local: store,         split: laravel-commerce-store }
+          - { local: sales-channel, split: laravel-commerce-sales-channel }
 
     name: Split ${{ matrix.package.split }}
     steps:

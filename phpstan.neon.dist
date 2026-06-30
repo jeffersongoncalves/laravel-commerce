@@ -7,5 +7,7 @@ parameters:
         - packages/core/src
         - packages/core/tests/Fixtures
         - packages/currency/src
+        - packages/store/src
+        - packages/sales-channel/src
     level: 5
     ignoreErrors: []
