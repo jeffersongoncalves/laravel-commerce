@@ -1,0 +1,54 @@
+{
+    "name": "jeffersongoncalves/laravel-commerce-monorepo",
+    "description": "Development monorepo (source-of-truth, not published) for the Laravel Commerce domain ecosystem. Component packages split read-only into jeffersongoncalves/laravel-commerce-* and the umbrella into jeffersongoncalves/laravel-commerce-suite (package jeffersongoncalves/laravel-commerce).",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/events": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.15"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.9|^3.0",
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0",
+        "symplify/monorepo-builder": "^11.2"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Commerce\\Suite\\": "packages/suite/src",
+            "JeffersonGoncalves\\Commerce\\Suite\\Tests\\": "packages/suite/tests",
+            "JeffersonGoncalves\\Commerce\\Core\\": "packages/core/src",
+            "JeffersonGoncalves\\Commerce\\Core\\Tests\\": "packages/core/tests",
+            "JeffersonGoncalves\\Commerce\\Core\\Database\\Factories\\": "packages/core/database/factories"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

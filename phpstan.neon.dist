@@ -1,0 +1,10 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - packages/suite/src
+        - packages/core/src
+        - packages/core/tests/Fixtures
+    level: 5
+    ignoreErrors: []

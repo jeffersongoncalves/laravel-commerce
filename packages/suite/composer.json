@@ -1,0 +1,67 @@
+{
+    "name": "jeffersongoncalves/laravel-commerce",
+    "description": "Laravel Commerce — meta-package installing the full Medusa-style commerce domain (catalog, pricing, inventory, cart, order, payment, fulfillment, tax, and more).",
+    "keywords": [
+        "laravel",
+        "commerce",
+        "ecommerce",
+        "medusa"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/laravel-commerce",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "jeffersongoncalves/laravel-commerce-core": "self.version"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.9|^3.0",
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Commerce\\Suite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Commerce\\Suite\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Commerce\\Suite\\CommerceServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/jeffersongoncalves/laravel-commerce/issues",
+        "source": "https://github.com/jeffersongoncalves/laravel-commerce"
+    }
+}
