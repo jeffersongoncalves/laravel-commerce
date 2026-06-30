@@ -17,6 +17,8 @@ parameters:
         - packages/product/src
         - packages/pricing/src
         - packages/inventory/src
+        - packages/customer/src
+        - packages/tax/src
     level: 5
     ignoreErrors: []
     parallel:

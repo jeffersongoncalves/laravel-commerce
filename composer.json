@@ -66,7 +66,13 @@
             "JeffersonGoncalves\\Commerce\\Pricing\\Database\\Factories\\": "packages/pricing/database/factories",
             "JeffersonGoncalves\\Commerce\\Inventory\\": "packages/inventory/src",
             "JeffersonGoncalves\\Commerce\\Inventory\\Tests\\": "packages/inventory/tests",
-            "JeffersonGoncalves\\Commerce\\Inventory\\Database\\Factories\\": "packages/inventory/database/factories"
+            "JeffersonGoncalves\\Commerce\\Inventory\\Database\\Factories\\": "packages/inventory/database/factories",
+            "JeffersonGoncalves\\Commerce\\Customer\\": "packages/customer/src",
+            "JeffersonGoncalves\\Commerce\\Customer\\Tests\\": "packages/customer/tests",
+            "JeffersonGoncalves\\Commerce\\Customer\\Database\\Factories\\": "packages/customer/database/factories",
+            "JeffersonGoncalves\\Commerce\\Tax\\": "packages/tax/src",
+            "JeffersonGoncalves\\Commerce\\Tax\\Tests\\": "packages/tax/tests",
+            "JeffersonGoncalves\\Commerce\\Tax\\Database\\Factories\\": "packages/tax/database/factories"
         }
     },
     "scripts": {
