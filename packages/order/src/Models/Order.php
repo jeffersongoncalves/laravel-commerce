@@ -59,6 +59,32 @@ class Order extends BaseModel
     }
 
     /**
+     * @return HasMany<OrderTransaction, $this>
+     */
+    public function transactions(): HasMany
+    {
+        return $this->hasMany(OrderTransaction::class, 'order_id');
+    }
+
+    /**
+     * @return HasMany<OrderReturn, $this>
+     */
+    public function returns(): HasMany
+    {
+        return $this->hasMany(OrderReturn::class, 'order_id');
+    }
+
+    public function capturedTotal(): int
+    {
+        return (int) $this->transactions->where('type', 'capture')->sum('amount');
+    }
+
+    public function refundedTotal(): int
+    {
+        return (int) $this->transactions->where('type', 'refund')->sum('amount');
+    }
+
+    /**
      * @return BelongsTo<Cart, $this>
      */
     public function cart(): BelongsTo

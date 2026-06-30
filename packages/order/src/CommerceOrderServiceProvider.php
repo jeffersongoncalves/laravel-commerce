@@ -17,6 +17,9 @@ class CommerceOrderServiceProvider extends PackageServiceProvider
                 'create_commerce_orders_table',
                 'create_commerce_order_line_items_table',
                 'add_cart_id_to_commerce_orders_table',
+                'create_commerce_order_transactions_table',
+                'create_commerce_returns_table',
+                'create_commerce_return_items_table',
             ]);
     }
 }
