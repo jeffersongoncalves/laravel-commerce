@@ -36,7 +36,11 @@
         "jeffersongoncalves/laravel-commerce-cart": "self.version",
         "jeffersongoncalves/laravel-commerce-order": "self.version",
         "jeffersongoncalves/laravel-commerce-payment": "self.version",
-        "jeffersongoncalves/laravel-commerce-fulfillment": "self.version"
+        "jeffersongoncalves/laravel-commerce-fulfillment": "self.version",
+        "jeffersongoncalves/laravel-commerce-promotion": "self.version",
+        "jeffersongoncalves/laravel-commerce-loyalty": "self.version",
+        "jeffersongoncalves/laravel-commerce-store-credit": "self.version",
+        "jeffersongoncalves/laravel-commerce-translation": "self.version"
     },
     "require-dev": {
         "larastan/larastan": "^2.9|^3.0",

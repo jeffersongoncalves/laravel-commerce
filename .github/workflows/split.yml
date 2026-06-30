@@ -33,6 +33,10 @@ jobs:
           - { local: order,          split: laravel-commerce-order }
           - { local: payment,        split: laravel-commerce-payment }
           - { local: fulfillment,    split: laravel-commerce-fulfillment }
+          - { local: promotion,      split: laravel-commerce-promotion }
+          - { local: loyalty,        split: laravel-commerce-loyalty }
+          - { local: store-credit,   split: laravel-commerce-store-credit }
+          - { local: translation,    split: laravel-commerce-translation }
 
     name: Split ${{ matrix.package.split }}
     steps:

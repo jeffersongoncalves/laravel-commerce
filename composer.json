@@ -84,7 +84,19 @@
             "JeffersonGoncalves\\Commerce\\Payment\\Database\\Factories\\": "packages/payment/database/factories",
             "JeffersonGoncalves\\Commerce\\Fulfillment\\": "packages/fulfillment/src",
             "JeffersonGoncalves\\Commerce\\Fulfillment\\Tests\\": "packages/fulfillment/tests",
-            "JeffersonGoncalves\\Commerce\\Fulfillment\\Database\\Factories\\": "packages/fulfillment/database/factories"
+            "JeffersonGoncalves\\Commerce\\Fulfillment\\Database\\Factories\\": "packages/fulfillment/database/factories",
+            "JeffersonGoncalves\\Commerce\\Promotion\\": "packages/promotion/src",
+            "JeffersonGoncalves\\Commerce\\Promotion\\Tests\\": "packages/promotion/tests",
+            "JeffersonGoncalves\\Commerce\\Promotion\\Database\\Factories\\": "packages/promotion/database/factories",
+            "JeffersonGoncalves\\Commerce\\Loyalty\\": "packages/loyalty/src",
+            "JeffersonGoncalves\\Commerce\\Loyalty\\Tests\\": "packages/loyalty/tests",
+            "JeffersonGoncalves\\Commerce\\Loyalty\\Database\\Factories\\": "packages/loyalty/database/factories",
+            "JeffersonGoncalves\\Commerce\\StoreCredit\\": "packages/store-credit/src",
+            "JeffersonGoncalves\\Commerce\\StoreCredit\\Tests\\": "packages/store-credit/tests",
+            "JeffersonGoncalves\\Commerce\\StoreCredit\\Database\\Factories\\": "packages/store-credit/database/factories",
+            "JeffersonGoncalves\\Commerce\\Translation\\": "packages/translation/src",
+            "JeffersonGoncalves\\Commerce\\Translation\\Tests\\": "packages/translation/tests",
+            "JeffersonGoncalves\\Commerce\\Translation\\Database\\Factories\\": "packages/translation/database/factories"
         }
     },
     "scripts": {

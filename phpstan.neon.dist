@@ -23,6 +23,10 @@ parameters:
         - packages/order/src
         - packages/payment/src
         - packages/fulfillment/src
+        - packages/promotion/src
+        - packages/loyalty/src
+        - packages/store-credit/src
+        - packages/translation/src
     level: 5
     ignoreErrors: []
     parallel:
