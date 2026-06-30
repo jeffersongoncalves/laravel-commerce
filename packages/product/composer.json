@@ -19,7 +19,8 @@
     ],
     "require": {
         "php": "^8.2",
-        "jeffersongoncalves/laravel-commerce-core": "self.version"
+        "jeffersongoncalves/laravel-commerce-core": "self.version",
+        "jeffersongoncalves/laravel-commerce-pricing": "self.version"
     },
     "require-dev": {
         "larastan/larastan": "^2.9|^3.0",

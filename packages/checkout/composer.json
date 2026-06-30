@@ -1,10 +1,11 @@
 {
-    "name": "jeffersongoncalves/laravel-commerce-order",
-    "description": "Commerce order module — orders and order line items.",
+    "name": "jeffersongoncalves/laravel-commerce-checkout",
+    "description": "Commerce checkout orchestration — price resolution and the cart-to-order saga workflow (with inventory reservation and rollback).",
     "keywords": [
         "laravel",
         "commerce",
-        "order"
+        "checkout",
+        "workflow"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-commerce",
     "license": "MIT",
@@ -21,6 +22,9 @@
         "jeffersongoncalves/laravel-commerce-cart": "self.version",
         "jeffersongoncalves/laravel-commerce-core": "self.version",
         "jeffersongoncalves/laravel-commerce-customer": "self.version",
+        "jeffersongoncalves/laravel-commerce-inventory": "self.version",
+        "jeffersongoncalves/laravel-commerce-order": "self.version",
+        "jeffersongoncalves/laravel-commerce-pricing": "self.version",
         "jeffersongoncalves/laravel-commerce-product": "self.version",
         "jeffersongoncalves/laravel-commerce-region": "self.version",
         "jeffersongoncalves/laravel-commerce-sales-channel": "self.version"
@@ -35,19 +39,18 @@
     },
     "autoload": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Order\\": "src/"
+            "JeffersonGoncalves\\Commerce\\Checkout\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Order\\Tests\\": "tests/",
-            "JeffersonGoncalves\\Commerce\\Order\\Database\\Factories\\": "database/factories/"
+            "JeffersonGoncalves\\Commerce\\Checkout\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JeffersonGoncalves\\Commerce\\Order\\CommerceOrderServiceProvider"
+                "JeffersonGoncalves\\Commerce\\Checkout\\CommerceCheckoutServiceProvider"
             ]
         }
     },

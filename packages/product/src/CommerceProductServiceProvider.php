@@ -26,6 +26,7 @@ class CommerceProductServiceProvider extends PackageServiceProvider
                 'create_commerce_product_category_product_table',
                 'create_commerce_product_product_tag_table',
                 'create_commerce_product_variant_option_value_table',
+                'add_price_set_id_to_commerce_product_variants_table',
             ]);
     }
 }

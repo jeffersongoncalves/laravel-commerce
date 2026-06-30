@@ -3,13 +3,19 @@
 namespace JeffersonGoncalves\Commerce\Order\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use JeffersonGoncalves\Commerce\Cart\Models\Cart;
 use JeffersonGoncalves\Commerce\Core\Models\BaseModel;
+use JeffersonGoncalves\Commerce\Customer\Models\Customer;
 use JeffersonGoncalves\Commerce\Order\Database\Factories\OrderFactory;
 use JeffersonGoncalves\Commerce\Order\Enums\OrderStatus;
+use JeffersonGoncalves\Commerce\Region\Models\Region;
+use JeffersonGoncalves\Commerce\SalesChannel\Models\SalesChannel;
 
 /**
  * @property string $id
+ * @property string|null $cart_id
  * @property int|null $display_id
  * @property string|null $region_id
  * @property string|null $customer_id
@@ -50,6 +56,38 @@ class Order extends BaseModel
     public function items(): HasMany
     {
         return $this->hasMany(OrderLineItem::class, 'order_id');
+    }
+
+    /**
+     * @return BelongsTo<Cart, $this>
+     */
+    public function cart(): BelongsTo
+    {
+        return $this->belongsTo(Cart::class, 'cart_id');
+    }
+
+    /**
+     * @return BelongsTo<Customer, $this>
+     */
+    public function customer(): BelongsTo
+    {
+        return $this->belongsTo(Customer::class, 'customer_id');
+    }
+
+    /**
+     * @return BelongsTo<Region, $this>
+     */
+    public function region(): BelongsTo
+    {
+        return $this->belongsTo(Region::class, 'region_id');
+    }
+
+    /**
+     * @return BelongsTo<SalesChannel, $this>
+     */
+    public function salesChannel(): BelongsTo
+    {
+        return $this->belongsTo(SalesChannel::class, 'sales_channel_id');
     }
 
     public function total(): int

@@ -46,13 +46,20 @@ abstract class TestCase extends Orchestra
             mkdir($tempPath, 0755, true);
         }
 
-        foreach (glob($stubsPath.'/*.php.stub') as $stub) {
-            $filename = basename(str_replace('.php.stub', '.php', $stub));
-            $target = $tempPath.'/'.$filename;
+        $stubs = glob($stubsPath.'/*.php.stub') ?: [];
+        usort($stubs, function (string $a, string $b): int {
+            $ga = str_starts_with(basename($a), 'create_') ? 0 : 1;
+            $gb = str_starts_with(basename($b), 'create_') ? 0 : 1;
 
-            if (! file_exists($target)) {
-                copy($stub, $target);
-            }
+            return [$ga, basename($a)] <=> [$gb, basename($b)];
+        });
+
+        array_map('unlink', (array) glob($tempPath.'/*.php'));
+
+        $index = 0;
+        foreach ($stubs as $stub) {
+            $name = basename(str_replace('.php.stub', '.php', $stub));
+            copy($stub, sprintf('%s/%04d_%s', $tempPath, $index++, $name));
         }
 
         $this->loadMigrationsFrom($tempPath);

@@ -3,10 +3,14 @@
 namespace JeffersonGoncalves\Commerce\Cart\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use JeffersonGoncalves\Commerce\Cart\Database\Factories\CartFactory;
 use JeffersonGoncalves\Commerce\Core\Models\BaseModel;
+use JeffersonGoncalves\Commerce\Customer\Models\Customer;
+use JeffersonGoncalves\Commerce\Region\Models\Region;
+use JeffersonGoncalves\Commerce\SalesChannel\Models\SalesChannel;
 
 /**
  * @property string $id
@@ -55,6 +59,30 @@ class Cart extends BaseModel
     public function shippingMethods(): HasMany
     {
         return $this->hasMany(CartShippingMethod::class, 'cart_id');
+    }
+
+    /**
+     * @return BelongsTo<Customer, $this>
+     */
+    public function customer(): BelongsTo
+    {
+        return $this->belongsTo(Customer::class, 'customer_id');
+    }
+
+    /**
+     * @return BelongsTo<Region, $this>
+     */
+    public function region(): BelongsTo
+    {
+        return $this->belongsTo(Region::class, 'region_id');
+    }
+
+    /**
+     * @return BelongsTo<SalesChannel, $this>
+     */
+    public function salesChannel(): BelongsTo
+    {
+        return $this->belongsTo(SalesChannel::class, 'sales_channel_id');
     }
 
     public function itemSubtotal(): int

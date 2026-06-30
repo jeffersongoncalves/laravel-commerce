@@ -16,6 +16,7 @@ class CommerceOrderServiceProvider extends PackageServiceProvider
             ->hasMigrations([
                 'create_commerce_orders_table',
                 'create_commerce_order_line_items_table',
+                'add_cart_id_to_commerce_orders_table',
             ]);
     }
 }

@@ -1,31 +1,23 @@
 <?php
 
-namespace JeffersonGoncalves\Commerce\Product\Tests;
+namespace JeffersonGoncalves\Commerce\Checkout\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use JeffersonGoncalves\Commerce\Product\CommerceProductServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
     use RefreshDatabase;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'JeffersonGoncalves\\Commerce\\Product\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
-    }
-
-    protected function getPackageProviders($app): array
-    {
-        return [
-            CommerceProductServiceProvider::class,
-        ];
-    }
+    /**
+     * Domain packages whose migrations this orchestration package needs.
+     *
+     * @var list<string>
+     */
+    protected array $migrationPackages = [
+        'product', 'pricing', 'inventory', 'cart', 'order',
+        'customer', 'region', 'sales-channel',
+    ];
 
     protected function getEnvironmentSetUp($app): void
     {
@@ -39,14 +31,16 @@ abstract class TestCase extends Orchestra
 
     protected function defineDatabaseMigrations(): void
     {
-        $stubsPath = __DIR__.'/../database/migrations';
-        $tempPath = sys_get_temp_dir().'/laravel-commerce-product-migrations';
+        $stubs = [];
 
-        if (! is_dir($tempPath)) {
-            mkdir($tempPath, 0755, true);
+        foreach ($this->migrationPackages as $package) {
+            foreach (glob(__DIR__.'/../../'.$package.'/database/migrations/*.php.stub') ?: [] as $stub) {
+                $stubs[] = $stub;
+            }
         }
 
-        $stubs = glob($stubsPath.'/*.php.stub') ?: [];
+        // Create-table migrations first, then alters, so columns are added to
+        // already-existing tables regardless of cross-package filename sort.
         usort($stubs, function (string $a, string $b): int {
             $ga = str_starts_with(basename($a), 'create_') ? 0 : 1;
             $gb = str_starts_with(basename($b), 'create_') ? 0 : 1;
@@ -54,7 +48,13 @@ abstract class TestCase extends Orchestra
             return [$ga, basename($a)] <=> [$gb, basename($b)];
         });
 
-        array_map('unlink', (array) glob($tempPath.'/*.php'));
+        $tempPath = sys_get_temp_dir().'/laravel-commerce-checkout-migrations';
+
+        if (is_dir($tempPath)) {
+            array_map('unlink', (array) glob($tempPath.'/*.php'));
+        } else {
+            mkdir($tempPath, 0755, true);
+        }
 
         $index = 0;
         foreach ($stubs as $stub) {

@@ -96,7 +96,9 @@
             "JeffersonGoncalves\\Commerce\\StoreCredit\\Database\\Factories\\": "packages/store-credit/database/factories",
             "JeffersonGoncalves\\Commerce\\Translation\\": "packages/translation/src",
             "JeffersonGoncalves\\Commerce\\Translation\\Tests\\": "packages/translation/tests",
-            "JeffersonGoncalves\\Commerce\\Translation\\Database\\Factories\\": "packages/translation/database/factories"
+            "JeffersonGoncalves\\Commerce\\Translation\\Database\\Factories\\": "packages/translation/database/factories",
+            "JeffersonGoncalves\\Commerce\\Checkout\\": "packages/checkout/src",
+            "JeffersonGoncalves\\Commerce\\Checkout\\Tests\\": "packages/checkout/tests"
         }
     },
     "scripts": {

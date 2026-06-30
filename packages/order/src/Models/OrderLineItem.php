@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use JeffersonGoncalves\Commerce\Core\Models\BaseModel;
 use JeffersonGoncalves\Commerce\Order\Database\Factories\OrderLineItemFactory;
+use JeffersonGoncalves\Commerce\Product\Models\ProductVariant;
 
 /**
  * @property string $id
@@ -48,6 +49,14 @@ class OrderLineItem extends BaseModel
     public function order(): BelongsTo
     {
         return $this->belongsTo(Order::class, 'order_id');
+    }
+
+    /**
+     * @return BelongsTo<ProductVariant, $this>
+     */
+    public function variant(): BelongsTo
+    {
+        return $this->belongsTo(ProductVariant::class, 'variant_id');
     }
 
     protected static function newFactory(): OrderLineItemFactory

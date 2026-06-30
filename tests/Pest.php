@@ -8,7 +8,8 @@ $packages = [
     'product', 'pricing', 'inventory',
     'customer', 'tax', 'cart', 'order',
     'payment', 'fulfillment',
-    'promotion', 'loyalty', 'store-credit', 'translation', 'suite',
+    'promotion', 'loyalty', 'store-credit', 'translation',
+    'checkout', 'suite',
 ];
 
 foreach ($packages as $dir) {
