@@ -102,7 +102,9 @@
             "JeffersonGoncalves\\Commerce\\Checkout\\": "packages/checkout/src",
             "JeffersonGoncalves\\Commerce\\Checkout\\Tests\\": "packages/checkout/tests",
             "JeffersonGoncalves\\Commerce\\Storefront\\": "packages/storefront/src",
-            "JeffersonGoncalves\\Commerce\\Storefront\\Tests\\": "packages/storefront/tests"
+            "JeffersonGoncalves\\Commerce\\Storefront\\Tests\\": "packages/storefront/tests",
+            "JeffersonGoncalves\\Commerce\\Admin\\": "packages/admin/src",
+            "JeffersonGoncalves\\Commerce\\Admin\\Tests\\": "packages/admin/tests"
         }
     },
     "scripts": {

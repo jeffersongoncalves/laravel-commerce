@@ -9,7 +9,7 @@ $packages = [
     'customer', 'tax', 'cart', 'order',
     'payment', 'fulfillment',
     'promotion', 'loyalty', 'store-credit', 'translation',
-    'checkout', 'storefront', 'suite',
+    'checkout', 'storefront', 'admin', 'suite',
 ];
 
 foreach ($packages as $dir) {

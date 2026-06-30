@@ -1,0 +1,74 @@
+{
+    "name": "jeffersongoncalves/laravel-commerce-admin",
+    "description": "Commerce Admin API — headless REST endpoints (products CRUD, orders, returns, order edits) with secret API key auth.",
+    "keywords": [
+        "laravel",
+        "commerce",
+        "admin-api",
+        "headless"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/laravel-commerce",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/routing": "^11.0|^12.0|^13.0",
+        "jeffersongoncalves/laravel-commerce-api-key": "self.version",
+        "jeffersongoncalves/laravel-commerce-checkout": "self.version",
+        "jeffersongoncalves/laravel-commerce-core": "self.version",
+        "jeffersongoncalves/laravel-commerce-order": "self.version",
+        "jeffersongoncalves/laravel-commerce-product": "self.version",
+        "spatie/laravel-package-tools": "^1.15"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.9|^3.0",
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Commerce\\Admin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Commerce\\Admin\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Commerce\\Admin\\CommerceAdminServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/jeffersongoncalves/laravel-commerce/issues",
+        "source": "https://github.com/jeffersongoncalves/laravel-commerce"
+    }
+}

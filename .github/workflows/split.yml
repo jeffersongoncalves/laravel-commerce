@@ -39,6 +39,7 @@ jobs:
           - { local: translation,    split: laravel-commerce-translation }
           - { local: checkout,       split: laravel-commerce-checkout }
           - { local: storefront,     split: laravel-commerce-storefront }
+          - { local: admin,          split: laravel-commerce-admin }
 
     name: Split ${{ matrix.package.split }}
     steps:

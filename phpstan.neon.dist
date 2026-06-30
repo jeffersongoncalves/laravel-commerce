@@ -29,6 +29,7 @@ parameters:
         - packages/translation/src
         - packages/checkout/src
         - packages/storefront/src
+        - packages/admin/src
     level: 5
     ignoreErrors: []
     parallel:
