@@ -30,7 +30,8 @@
     },
     "autoload": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Currency\\": "src/"
+            "JeffersonGoncalves\\Commerce\\Currency\\": "src/",
+            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Seeders\\": "database/seeders"
         }
     },
     "autoload-dev": {

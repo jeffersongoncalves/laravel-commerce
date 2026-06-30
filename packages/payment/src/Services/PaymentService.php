@@ -3,6 +3,7 @@
 namespace JeffersonGoncalves\Commerce\Payment\Services;
 
 use JeffersonGoncalves\Commerce\Core\Services\Service;
+use JeffersonGoncalves\Commerce\Payment\Events\PaymentCaptured;
 use JeffersonGoncalves\Commerce\Payment\Models\Capture;
 use JeffersonGoncalves\Commerce\Payment\Models\Payment;
 
@@ -23,6 +24,8 @@ class PaymentService extends Service
         if ($payment->captured_at === null) {
             $payment->update(['captured_at' => now()]);
         }
+
+        event(new PaymentCaptured($payment, $capture));
 
         return $capture;
     }

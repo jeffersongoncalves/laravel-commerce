@@ -37,6 +37,7 @@
             "JeffersonGoncalves\\Commerce\\Currency\\": "packages/currency/src",
             "JeffersonGoncalves\\Commerce\\Currency\\Tests\\": "packages/currency/tests",
             "JeffersonGoncalves\\Commerce\\Currency\\Database\\Factories\\": "packages/currency/database/factories",
+            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Seeders\\": "packages/currency/database/seeders",
             "JeffersonGoncalves\\Commerce\\Store\\": "packages/store/src",
             "JeffersonGoncalves\\Commerce\\Store\\Tests\\": "packages/store/tests",
             "JeffersonGoncalves\\Commerce\\Store\\Database\\Factories\\": "packages/store/database/factories",
