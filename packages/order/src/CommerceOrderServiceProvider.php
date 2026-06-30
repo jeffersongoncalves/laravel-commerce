@@ -20,6 +20,10 @@ class CommerceOrderServiceProvider extends PackageServiceProvider
                 'create_commerce_order_transactions_table',
                 'create_commerce_returns_table',
                 'create_commerce_return_items_table',
+                'create_commerce_exchanges_table',
+                'create_commerce_exchange_items_table',
+                'create_commerce_claims_table',
+                'create_commerce_claim_items_table',
             ]);
     }
 }

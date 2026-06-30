@@ -74,6 +74,22 @@ class Order extends BaseModel
         return $this->hasMany(OrderReturn::class, 'order_id');
     }
 
+    /**
+     * @return HasMany<OrderExchange, $this>
+     */
+    public function exchanges(): HasMany
+    {
+        return $this->hasMany(OrderExchange::class, 'order_id');
+    }
+
+    /**
+     * @return HasMany<OrderClaim, $this>
+     */
+    public function claims(): HasMany
+    {
+        return $this->hasMany(OrderClaim::class, 'order_id');
+    }
+
     public function capturedTotal(): int
     {
         return (int) $this->transactions->where('type', 'capture')->sum('amount');
