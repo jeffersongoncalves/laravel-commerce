@@ -57,7 +57,10 @@
             "JeffersonGoncalves\\Commerce\\User\\Database\\Factories\\": "packages/user/database/factories",
             "JeffersonGoncalves\\Commerce\\Auth\\": "packages/auth/src",
             "JeffersonGoncalves\\Commerce\\Auth\\Tests\\": "packages/auth/tests",
-            "JeffersonGoncalves\\Commerce\\Auth\\Database\\Factories\\": "packages/auth/database/factories"
+            "JeffersonGoncalves\\Commerce\\Auth\\Database\\Factories\\": "packages/auth/database/factories",
+            "JeffersonGoncalves\\Commerce\\Product\\": "packages/product/src",
+            "JeffersonGoncalves\\Commerce\\Product\\Tests\\": "packages/product/tests",
+            "JeffersonGoncalves\\Commerce\\Product\\Database\\Factories\\": "packages/product/database/factories"
         }
     },
     "scripts": {

@@ -14,5 +14,6 @@ parameters:
         - packages/api-key/src
         - packages/user/src
         - packages/auth/src
+        - packages/product/src
     level: 5
     ignoreErrors: []

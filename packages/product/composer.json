@@ -1,11 +1,11 @@
 {
-    "name": "jeffersongoncalves/laravel-commerce",
-    "description": "Laravel Commerce — meta-package installing the full Medusa-style commerce domain (catalog, pricing, inventory, cart, order, payment, fulfillment, tax, and more).",
+    "name": "jeffersongoncalves/laravel-commerce-product",
+    "description": "Commerce product module — products, variants, options, categories, collections, tags, types, and images.",
     "keywords": [
         "laravel",
         "commerce",
-        "ecommerce",
-        "medusa"
+        "product",
+        "catalog"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-commerce",
     "license": "MIT",
@@ -19,16 +19,11 @@
     ],
     "require": {
         "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
         "jeffersongoncalves/laravel-commerce-core": "self.version",
-        "jeffersongoncalves/laravel-commerce-currency": "self.version",
-        "jeffersongoncalves/laravel-commerce-store": "self.version",
-        "jeffersongoncalves/laravel-commerce-sales-channel": "self.version",
-        "jeffersongoncalves/laravel-commerce-region": "self.version",
-        "jeffersongoncalves/laravel-commerce-stock-location": "self.version",
-        "jeffersongoncalves/laravel-commerce-api-key": "self.version",
-        "jeffersongoncalves/laravel-commerce-user": "self.version",
-        "jeffersongoncalves/laravel-commerce-auth": "self.version",
-        "jeffersongoncalves/laravel-commerce-product": "self.version"
+        "spatie/laravel-package-tools": "^1.15"
     },
     "require-dev": {
         "larastan/larastan": "^2.9|^3.0",
@@ -40,18 +35,19 @@
     },
     "autoload": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Suite\\": "src/"
+            "JeffersonGoncalves\\Commerce\\Product\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Suite\\Tests\\": "tests/"
+            "JeffersonGoncalves\\Commerce\\Product\\Tests\\": "tests/",
+            "JeffersonGoncalves\\Commerce\\Product\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JeffersonGoncalves\\Commerce\\Suite\\CommerceServiceProvider"
+                "JeffersonGoncalves\\Commerce\\Product\\CommerceProductServiceProvider"
             ]
         }
     },
