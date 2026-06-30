@@ -33,4 +33,20 @@ class InventoryService extends Service
 
         return $level;
     }
+
+    /**
+     * Release a previously reserved quantity at a location.
+     */
+    public function release(string $inventoryItemId, string $locationId, int $quantity): InventoryLevel
+    {
+        /** @var InventoryLevel $level */
+        $level = InventoryLevel::query()
+            ->where('inventory_item_id', $inventoryItemId)
+            ->where('location_id', $locationId)
+            ->firstOrFail();
+
+        $level->update(['reserved_quantity' => max(0, $level->reserved_quantity - $quantity)]);
+
+        return $level;
+    }
 }

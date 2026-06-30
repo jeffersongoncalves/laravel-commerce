@@ -30,7 +30,8 @@
     },
     "autoload": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Region\\": "src/"
+            "JeffersonGoncalves\\Commerce\\Region\\": "src/",
+            "JeffersonGoncalves\\Commerce\\Region\\Database\\Seeders\\": "database/seeders"
         }
     },
     "autoload-dev": {

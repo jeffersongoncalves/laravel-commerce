@@ -47,6 +47,7 @@
             "JeffersonGoncalves\\Commerce\\Region\\": "packages/region/src",
             "JeffersonGoncalves\\Commerce\\Region\\Tests\\": "packages/region/tests",
             "JeffersonGoncalves\\Commerce\\Region\\Database\\Factories\\": "packages/region/database/factories",
+            "JeffersonGoncalves\\Commerce\\Region\\Database\\Seeders\\": "packages/region/database/seeders",
             "JeffersonGoncalves\\Commerce\\StockLocation\\": "packages/stock-location/src",
             "JeffersonGoncalves\\Commerce\\StockLocation\\Tests\\": "packages/stock-location/tests",
             "JeffersonGoncalves\\Commerce\\StockLocation\\Database\\Factories\\": "packages/stock-location/database/factories",
