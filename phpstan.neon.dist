@@ -6,5 +6,6 @@ parameters:
         - packages/suite/src
         - packages/core/src
         - packages/core/tests/Fixtures
+        - packages/currency/src
     level: 5
     ignoreErrors: []

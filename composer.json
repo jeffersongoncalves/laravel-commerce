@@ -33,7 +33,10 @@
             "JeffersonGoncalves\\Commerce\\Suite\\Tests\\": "packages/suite/tests",
             "JeffersonGoncalves\\Commerce\\Core\\": "packages/core/src",
             "JeffersonGoncalves\\Commerce\\Core\\Tests\\": "packages/core/tests",
-            "JeffersonGoncalves\\Commerce\\Core\\Database\\Factories\\": "packages/core/database/factories"
+            "JeffersonGoncalves\\Commerce\\Core\\Database\\Factories\\": "packages/core/database/factories",
+            "JeffersonGoncalves\\Commerce\\Currency\\": "packages/currency/src",
+            "JeffersonGoncalves\\Commerce\\Currency\\Tests\\": "packages/currency/tests",
+            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Factories\\": "packages/currency/database/factories"
         }
     },
     "scripts": {

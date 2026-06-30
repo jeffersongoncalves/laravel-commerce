@@ -1,11 +1,10 @@
 {
-    "name": "jeffersongoncalves/laravel-commerce",
-    "description": "Laravel Commerce — meta-package installing the full Medusa-style commerce domain (catalog, pricing, inventory, cart, order, payment, fulfillment, tax, and more).",
+    "name": "jeffersongoncalves/laravel-commerce-currency",
+    "description": "Commerce currency module — ISO 4217 currencies with symbols, decimal digits, and rounding.",
     "keywords": [
         "laravel",
         "commerce",
-        "ecommerce",
-        "medusa"
+        "currency"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-commerce",
     "license": "MIT",
@@ -19,8 +18,11 @@
     ],
     "require": {
         "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
         "jeffersongoncalves/laravel-commerce-core": "self.version",
-        "jeffersongoncalves/laravel-commerce-currency": "self.version"
+        "spatie/laravel-package-tools": "^1.15"
     },
     "require-dev": {
         "larastan/larastan": "^2.9|^3.0",
@@ -32,18 +34,19 @@
     },
     "autoload": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Suite\\": "src/"
+            "JeffersonGoncalves\\Commerce\\Currency\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JeffersonGoncalves\\Commerce\\Suite\\Tests\\": "tests/"
+            "JeffersonGoncalves\\Commerce\\Currency\\Tests\\": "tests/",
+            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JeffersonGoncalves\\Commerce\\Suite\\CommerceServiceProvider"
+                "JeffersonGoncalves\\Commerce\\Currency\\CommerceCurrencyServiceProvider"
             ]
         }
     },

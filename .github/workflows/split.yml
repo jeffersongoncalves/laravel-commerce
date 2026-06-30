@@ -14,8 +14,9 @@ jobs:
       fail-fast: false
       matrix:
         package:
-          - { local: suite, split: laravel-commerce-suite }
-          - { local: core,  split: laravel-commerce-core }
+          - { local: suite,    split: laravel-commerce-suite }
+          - { local: core,     split: laravel-commerce-core }
+          - { local: currency, split: laravel-commerce-currency }
 
     name: Split ${{ matrix.package.split }}
     steps:
