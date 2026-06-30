@@ -22,6 +22,8 @@ jobs:
           - { local: region,         split: laravel-commerce-region }
           - { local: stock-location, split: laravel-commerce-stock-location }
           - { local: api-key,        split: laravel-commerce-api-key }
+          - { local: user,           split: laravel-commerce-user }
+          - { local: auth,           split: laravel-commerce-auth }
 
     name: Split ${{ matrix.package.split }}
     steps:

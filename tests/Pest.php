@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 $packages = [
     'core', 'currency', 'store', 'sales-channel', 'region',
-    'stock-location', 'api-key', 'suite',
+    'stock-location', 'api-key', 'user', 'auth', 'suite',
 ];
 
 foreach ($packages as $dir) {

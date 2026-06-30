@@ -51,7 +51,13 @@
             "JeffersonGoncalves\\Commerce\\StockLocation\\Database\\Factories\\": "packages/stock-location/database/factories",
             "JeffersonGoncalves\\Commerce\\ApiKey\\": "packages/api-key/src",
             "JeffersonGoncalves\\Commerce\\ApiKey\\Tests\\": "packages/api-key/tests",
-            "JeffersonGoncalves\\Commerce\\ApiKey\\Database\\Factories\\": "packages/api-key/database/factories"
+            "JeffersonGoncalves\\Commerce\\ApiKey\\Database\\Factories\\": "packages/api-key/database/factories",
+            "JeffersonGoncalves\\Commerce\\User\\": "packages/user/src",
+            "JeffersonGoncalves\\Commerce\\User\\Tests\\": "packages/user/tests",
+            "JeffersonGoncalves\\Commerce\\User\\Database\\Factories\\": "packages/user/database/factories",
+            "JeffersonGoncalves\\Commerce\\Auth\\": "packages/auth/src",
+            "JeffersonGoncalves\\Commerce\\Auth\\Tests\\": "packages/auth/tests",
+            "JeffersonGoncalves\\Commerce\\Auth\\Database\\Factories\\": "packages/auth/database/factories"
         }
     },
     "scripts": {

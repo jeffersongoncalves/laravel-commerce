@@ -12,5 +12,7 @@ parameters:
         - packages/region/src
         - packages/stock-location/src
         - packages/api-key/src
+        - packages/user/src
+        - packages/auth/src
     level: 5
     ignoreErrors: []
