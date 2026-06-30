@@ -6,7 +6,7 @@ $packages = [
     'core', 'currency', 'store', 'sales-channel', 'region',
     'stock-location', 'api-key', 'user', 'auth',
     'product', 'pricing', 'inventory',
-    'customer', 'tax', 'suite',
+    'customer', 'tax', 'cart', 'suite',
 ];
 
 foreach ($packages as $dir) {
