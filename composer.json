@@ -45,7 +45,13 @@
             "JeffersonGoncalves\\Commerce\\SalesChannel\\Database\\Factories\\": "packages/sales-channel/database/factories",
             "JeffersonGoncalves\\Commerce\\Region\\": "packages/region/src",
             "JeffersonGoncalves\\Commerce\\Region\\Tests\\": "packages/region/tests",
-            "JeffersonGoncalves\\Commerce\\Region\\Database\\Factories\\": "packages/region/database/factories"
+            "JeffersonGoncalves\\Commerce\\Region\\Database\\Factories\\": "packages/region/database/factories",
+            "JeffersonGoncalves\\Commerce\\StockLocation\\": "packages/stock-location/src",
+            "JeffersonGoncalves\\Commerce\\StockLocation\\Tests\\": "packages/stock-location/tests",
+            "JeffersonGoncalves\\Commerce\\StockLocation\\Database\\Factories\\": "packages/stock-location/database/factories",
+            "JeffersonGoncalves\\Commerce\\ApiKey\\": "packages/api-key/src",
+            "JeffersonGoncalves\\Commerce\\ApiKey\\Tests\\": "packages/api-key/tests",
+            "JeffersonGoncalves\\Commerce\\ApiKey\\Database\\Factories\\": "packages/api-key/database/factories"
         }
     },
     "scripts": {

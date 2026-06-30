@@ -10,5 +10,7 @@ parameters:
         - packages/store/src
         - packages/sales-channel/src
         - packages/region/src
+        - packages/stock-location/src
+        - packages/api-key/src
     level: 5
     ignoreErrors: []

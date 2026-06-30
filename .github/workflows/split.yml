@@ -19,7 +19,9 @@ jobs:
           - { local: currency,      split: laravel-commerce-currency }
           - { local: store,         split: laravel-commerce-store }
           - { local: sales-channel, split: laravel-commerce-sales-channel }
-          - { local: region,        split: laravel-commerce-region }
+          - { local: region,         split: laravel-commerce-region }
+          - { local: stock-location, split: laravel-commerce-stock-location }
+          - { local: api-key,        split: laravel-commerce-api-key }
 
     name: Split ${{ matrix.package.split }}
     steps:

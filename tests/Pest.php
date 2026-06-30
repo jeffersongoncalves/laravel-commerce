@@ -3,7 +3,8 @@
 declare(strict_types=1);
 
 $packages = [
-    'core', 'currency', 'store', 'sales-channel', 'region', 'suite',
+    'core', 'currency', 'store', 'sales-channel', 'region',
+    'stock-location', 'api-key', 'suite',
 ];
 
 foreach ($packages as $dir) {
