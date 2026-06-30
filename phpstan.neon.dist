@@ -28,6 +28,7 @@ parameters:
         - packages/store-credit/src
         - packages/translation/src
         - packages/checkout/src
+        - packages/storefront/src
     level: 5
     ignoreErrors: []
     parallel:

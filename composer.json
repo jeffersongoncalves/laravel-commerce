@@ -99,7 +99,9 @@
             "JeffersonGoncalves\\Commerce\\Translation\\Tests\\": "packages/translation/tests",
             "JeffersonGoncalves\\Commerce\\Translation\\Database\\Factories\\": "packages/translation/database/factories",
             "JeffersonGoncalves\\Commerce\\Checkout\\": "packages/checkout/src",
-            "JeffersonGoncalves\\Commerce\\Checkout\\Tests\\": "packages/checkout/tests"
+            "JeffersonGoncalves\\Commerce\\Checkout\\Tests\\": "packages/checkout/tests",
+            "JeffersonGoncalves\\Commerce\\Storefront\\": "packages/storefront/src",
+            "JeffersonGoncalves\\Commerce\\Storefront\\Tests\\": "packages/storefront/tests"
         }
     },
     "scripts": {

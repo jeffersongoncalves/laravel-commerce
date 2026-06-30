@@ -38,6 +38,7 @@ jobs:
           - { local: store-credit,   split: laravel-commerce-store-credit }
           - { local: translation,    split: laravel-commerce-translation }
           - { local: checkout,       split: laravel-commerce-checkout }
+          - { local: storefront,     split: laravel-commerce-storefront }
 
     name: Split ${{ matrix.package.split }}
     steps:
