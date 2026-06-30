@@ -31,6 +31,8 @@ jobs:
           - { local: tax,            split: laravel-commerce-tax }
           - { local: cart,           split: laravel-commerce-cart }
           - { local: order,          split: laravel-commerce-order }
+          - { local: payment,        split: laravel-commerce-payment }
+          - { local: fulfillment,    split: laravel-commerce-fulfillment }
 
     name: Split ${{ matrix.package.split }}
     steps:

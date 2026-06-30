@@ -78,7 +78,13 @@
             "JeffersonGoncalves\\Commerce\\Cart\\Database\\Factories\\": "packages/cart/database/factories",
             "JeffersonGoncalves\\Commerce\\Order\\": "packages/order/src",
             "JeffersonGoncalves\\Commerce\\Order\\Tests\\": "packages/order/tests",
-            "JeffersonGoncalves\\Commerce\\Order\\Database\\Factories\\": "packages/order/database/factories"
+            "JeffersonGoncalves\\Commerce\\Order\\Database\\Factories\\": "packages/order/database/factories",
+            "JeffersonGoncalves\\Commerce\\Payment\\": "packages/payment/src",
+            "JeffersonGoncalves\\Commerce\\Payment\\Tests\\": "packages/payment/tests",
+            "JeffersonGoncalves\\Commerce\\Payment\\Database\\Factories\\": "packages/payment/database/factories",
+            "JeffersonGoncalves\\Commerce\\Fulfillment\\": "packages/fulfillment/src",
+            "JeffersonGoncalves\\Commerce\\Fulfillment\\Tests\\": "packages/fulfillment/tests",
+            "JeffersonGoncalves\\Commerce\\Fulfillment\\Database\\Factories\\": "packages/fulfillment/database/factories"
         }
     },
     "scripts": {

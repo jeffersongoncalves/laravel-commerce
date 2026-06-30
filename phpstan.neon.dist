@@ -21,6 +21,8 @@ parameters:
         - packages/tax/src
         - packages/cart/src
         - packages/order/src
+        - packages/payment/src
+        - packages/fulfillment/src
     level: 5
     ignoreErrors: []
     parallel:
