@@ -30,6 +30,7 @@ jobs:
           - { local: customer,       split: laravel-commerce-customer }
           - { local: tax,            split: laravel-commerce-tax }
           - { local: cart,           split: laravel-commerce-cart }
+          - { local: order,          split: laravel-commerce-order }
 
     name: Split ${{ matrix.package.split }}
     steps:

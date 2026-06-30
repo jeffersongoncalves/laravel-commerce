@@ -20,6 +20,7 @@ parameters:
         - packages/customer/src
         - packages/tax/src
         - packages/cart/src
+        - packages/order/src
     level: 5
     ignoreErrors: []
     parallel:

@@ -75,7 +75,10 @@
             "JeffersonGoncalves\\Commerce\\Tax\\Database\\Factories\\": "packages/tax/database/factories",
             "JeffersonGoncalves\\Commerce\\Cart\\": "packages/cart/src",
             "JeffersonGoncalves\\Commerce\\Cart\\Tests\\": "packages/cart/tests",
-            "JeffersonGoncalves\\Commerce\\Cart\\Database\\Factories\\": "packages/cart/database/factories"
+            "JeffersonGoncalves\\Commerce\\Cart\\Database\\Factories\\": "packages/cart/database/factories",
+            "JeffersonGoncalves\\Commerce\\Order\\": "packages/order/src",
+            "JeffersonGoncalves\\Commerce\\Order\\Tests\\": "packages/order/tests",
+            "JeffersonGoncalves\\Commerce\\Order\\Database\\Factories\\": "packages/order/database/factories"
         }
     },
     "scripts": {

@@ -1,0 +1,21 @@
+<?php
+
+namespace JeffersonGoncalves\Commerce\Order;
+
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
+
+class CommerceOrderServiceProvider extends PackageServiceProvider
+{
+    public static string $name = 'commerce-order';
+
+    public function configurePackage(Package $package): void
+    {
+        $package->name(static::$name)
+            ->hasConfigFile()
+            ->hasMigrations([
+                'create_commerce_orders_table',
+                'create_commerce_order_line_items_table',
+            ]);
+    }
+}
