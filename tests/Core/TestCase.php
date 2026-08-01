@@ -36,9 +36,9 @@ abstract class TestCase extends Orchestra
             'prefix' => '',
         ]);
 
-        $configPath = __DIR__.'/../../config/commerce-core.php';
+        $configPath = __DIR__.'/../../config/commerce.php';
         if (file_exists($configPath)) {
-            $app['config']->set('commerce-core', require $configPath);
+            $app['config']->set('commerce', require $configPath);
         }
     }
 

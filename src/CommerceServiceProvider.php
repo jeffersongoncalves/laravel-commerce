@@ -10,30 +10,7 @@ class CommerceServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package->name('laravel-commerce')
-            ->hasConfigFile([
-                'commerce-api-key',
-                'commerce-auth',
-                'commerce-cart',
-                'commerce-core',
-                'commerce-currency',
-                'commerce-customer',
-                'commerce-fulfillment',
-                'commerce-inventory',
-                'commerce-loyalty',
-                'commerce-order',
-                'commerce-payment',
-                'commerce-pricing',
-                'commerce-product',
-                'commerce-promotion',
-                'commerce-region',
-                'commerce-sales-channel',
-                'commerce-stock-location',
-                'commerce-store',
-                'commerce-store-credit',
-                'commerce-tax',
-                'commerce-translation',
-                'commerce-user',
-            ])
+            ->hasConfigFile('commerce')
             ->hasTranslations()
             ->hasRoutes([
                 'admin',
