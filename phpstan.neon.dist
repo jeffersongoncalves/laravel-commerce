@@ -1,0 +1,13 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - src
+        - tests/Core/Fixtures
+    level: 5
+    ignoreErrors: []
+    parallel:
+        # Larastan boots the Testbench app per worker; concurrent workers race
+        # on bootstrap/cache/services.php on Windows. One process avoids it.
+        maximumNumberOfProcesses: 1

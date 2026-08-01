@@ -1,0 +1,123 @@
+{
+    "name": "jeffersongoncalves/laravel-commerce",
+    "description": "Laravel Commerce — a Medusa-style headless commerce domain for Laravel (catalog, pricing, inventory, cart, order, payment, fulfillment, tax, promotions, and more) plus a saga workflow engine.",
+    "keywords": [
+        "laravel",
+        "commerce",
+        "ecommerce",
+        "medusa"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/laravel-commerce",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/events": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/routing": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.15"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.9|^3.0",
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\Commerce\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\Commerce\\Tests\\": "tests/",
+            "JeffersonGoncalves\\Commerce\\Core\\Tests\\": "tests/Core/",
+            "JeffersonGoncalves\\Commerce\\Currency\\Tests\\": "tests/Currency/",
+            "JeffersonGoncalves\\Commerce\\Store\\Tests\\": "tests/Store/",
+            "JeffersonGoncalves\\Commerce\\SalesChannel\\Tests\\": "tests/SalesChannel/",
+            "JeffersonGoncalves\\Commerce\\Region\\Tests\\": "tests/Region/",
+            "JeffersonGoncalves\\Commerce\\StockLocation\\Tests\\": "tests/StockLocation/",
+            "JeffersonGoncalves\\Commerce\\ApiKey\\Tests\\": "tests/ApiKey/",
+            "JeffersonGoncalves\\Commerce\\User\\Tests\\": "tests/User/",
+            "JeffersonGoncalves\\Commerce\\Auth\\Tests\\": "tests/Auth/",
+            "JeffersonGoncalves\\Commerce\\Product\\Tests\\": "tests/Product/",
+            "JeffersonGoncalves\\Commerce\\Pricing\\Tests\\": "tests/Pricing/",
+            "JeffersonGoncalves\\Commerce\\Inventory\\Tests\\": "tests/Inventory/",
+            "JeffersonGoncalves\\Commerce\\Customer\\Tests\\": "tests/Customer/",
+            "JeffersonGoncalves\\Commerce\\Tax\\Tests\\": "tests/Tax/",
+            "JeffersonGoncalves\\Commerce\\Cart\\Tests\\": "tests/Cart/",
+            "JeffersonGoncalves\\Commerce\\Order\\Tests\\": "tests/Order/",
+            "JeffersonGoncalves\\Commerce\\Payment\\Tests\\": "tests/Payment/",
+            "JeffersonGoncalves\\Commerce\\Fulfillment\\Tests\\": "tests/Fulfillment/",
+            "JeffersonGoncalves\\Commerce\\Promotion\\Tests\\": "tests/Promotion/",
+            "JeffersonGoncalves\\Commerce\\Loyalty\\Tests\\": "tests/Loyalty/",
+            "JeffersonGoncalves\\Commerce\\StoreCredit\\Tests\\": "tests/StoreCredit/",
+            "JeffersonGoncalves\\Commerce\\Translation\\Tests\\": "tests/Translation/",
+            "JeffersonGoncalves\\Commerce\\Checkout\\Tests\\": "tests/Checkout/",
+            "JeffersonGoncalves\\Commerce\\Storefront\\Tests\\": "tests/Storefront/",
+            "JeffersonGoncalves\\Commerce\\Admin\\Tests\\": "tests/Admin/",
+            "JeffersonGoncalves\\Commerce\\Core\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Currency\\Database\\Seeders\\": "database/seeders/",
+            "JeffersonGoncalves\\Commerce\\Store\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\SalesChannel\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Region\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Region\\Database\\Seeders\\": "database/seeders/",
+            "JeffersonGoncalves\\Commerce\\StockLocation\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\ApiKey\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\User\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Auth\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Product\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Pricing\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Inventory\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Customer\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Tax\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Cart\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Order\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Payment\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Fulfillment\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Promotion\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Loyalty\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\StoreCredit\\Database\\Factories\\": "database/factories/",
+            "JeffersonGoncalves\\Commerce\\Translation\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\Commerce\\CommerceServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/jeffersongoncalves/laravel-commerce/issues",
+        "source": "https://github.com/jeffersongoncalves/laravel-commerce"
+    }
+}
